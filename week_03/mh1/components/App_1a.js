@@ -3,11 +3,11 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCircle} from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { StyleSheet, Text, View, Button} from 'react-native';
+
 library.add(faCircle);
 
-
 // MH2
-export default function MH2() {
+export default function App_1a() {
     return(
       <View style={styles2.con2}>
         <View style={styles2.con2_1}>
@@ -64,9 +64,9 @@ export default function MH2() {
         <StatusBar style="auto" />
       </View>
     )
-}
+  }
   
-const styles2 = StyleSheet.create({
+  const styles2 = StyleSheet.create({
     con2: {
       flex: 1,
       backgroundImage:'linear-gradient(rgba(199,244,246,1) 0%, rgba(209,244,246,1) 80%, rgba(0,204,249,1) 100%)',
@@ -148,4 +148,4 @@ const styles2 = StyleSheet.create({
       fontWeight:'700', 
       textAlign: 'center',
     }
-});
+  });
