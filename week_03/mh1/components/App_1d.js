@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Button, TextInput} from 'react-native';
+import { StyleSheet, Text, View, Button, TextInput, Image} from 'react-native';
 
 
 export default function App_1d(){
@@ -42,9 +42,9 @@ export default function App_1d(){
           </View>
   
           <View style={styles5.con5_2_3}>
-            <Text>
-              hí
-            </Text>
+            <View style={{alignItems:'center'}}>
+              <Image source={require('../assets/rr3.png')} style={{width: '310px', height: '55px'}}/>
+            </View>
           </View>
         </View>
         <StatusBar style="auto" />
@@ -103,7 +103,7 @@ export default function App_1d(){
     },
     con5_2_3:{
       flex:2,
-      backgroundColor: 'green',
+      //backgroundColor: 'green',
       
     },
   });
