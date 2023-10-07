@@ -12,10 +12,10 @@ export default function App(){
     //<FirstScreen/>
     //<App_1a/>
     //<App_1b/>
-    //<App_1c/>
+    <App_1c/>
     //<App_1d/>
     //<App_1e/>
     //<App_2a/>
-    <App_XMEye/>
+    //<App_XMEye/>
   )
 };
