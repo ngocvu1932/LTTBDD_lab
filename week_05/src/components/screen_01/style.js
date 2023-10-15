@@ -7,14 +7,8 @@ export const styles = StyleSheet.create({
         backgroundColor: 'white',
     },
 
-    header:{
-        flex: 4,
-        // backgroundColor: 'green',
-        
-    },
-
     body:{
-        flex: 2,
+        flex: 6,
         //backgroundColor: 'green',
         
     },

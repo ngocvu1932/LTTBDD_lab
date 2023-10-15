@@ -5,6 +5,16 @@ export const styles = StyleSheet.create({
         flex: 1,
     },
 
+    container_1:{
+        flex:4,
+        alignItems: 'center',
+        justifyContent:'center'
+    },
+
+    container_2:{
+        flex:2
+    },
+
     text: {
         fontSize: 15,
         fontWeight: '400',
@@ -68,5 +78,10 @@ export const styles = StyleSheet.create({
         borderColor: 'gray',
         height: 34,
         width: 332,
+    },
+
+    image :{
+        width: 267,
+        height: 330,
     }
 });
