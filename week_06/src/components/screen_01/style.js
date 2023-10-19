@@ -45,5 +45,16 @@ export const styles = StyleSheet.create({
         padding: 10,
         fontSize: 14,
         fontWeight: '500'
+    }, 
+
+    footer: {
+        backgroundColor: '#1BA9FF',
+        height: '10%'
+    }, 
+    grpOp: {
+        flexDirection: 'row',
+        justifyContent: 'space-around'
+        
+
     }
   });

@@ -1,7 +1,7 @@
 import { FlatList, Image, Text, View } from "react-native";
 import { styles } from "./style";
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
-import { faStar} from "@fortawesome/free-solid-svg-icons"
+import { faStar, faBars, faHouse, faArrowLeft} from "@fortawesome/free-solid-svg-icons"
 
 const DATA=[
     {
@@ -79,6 +79,16 @@ export const Screen_02 = () => {
                 renderItem={renderItem}
                 numColumns={2}
             />
+
+            <View style={{ position: 'absolute', bottom: 0, left: 0, right: 0 }}>
+                <View style={styles.footer}>
+                    <View style={styles.grpOp}> 
+                        <FontAwesomeIcon style={{padding: 10}} size={35} icon={faBars} />
+                        <FontAwesomeIcon style={{padding: 10}} size={35} icon={faHouse} />
+                        <FontAwesomeIcon style={{padding: 10}} size={35} icon={faArrowLeft}/>
+                    </View>
+                </View>
+            </View>
         </View>
     );
 }
