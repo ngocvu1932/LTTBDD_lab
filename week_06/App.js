@@ -24,9 +24,9 @@ export default function App() {
   const renderHeader2 = () => {
     return(
       <View style={{flexDirection:'row', alignItems:'center'}} >
-        <FontAwesomeIcon size={28} style={{zIndex: 1, marginRight: -35}} icon={faMagnifyingGlass}/>
-        <TextInput style={{zIndex:0, paddingLeft: 40, backgroundColor:'white', width: 250, height:40, borderRadius: 8, fontSize: '17px'}} placeholder='Dây cáp usb' ></TextInput>
-        <FontAwesomeIcon icon={faCartShopping} size={28} style={{color:'white',marginLeft: 20}} />
+        <FontAwesomeIcon style={{marginRight: -33, zIndex: 0}} size={28} icon={faMagnifyingGlass}/>
+        <TextInput style={{backgroundColor:'white', height: '40px', width: '120px', borderRadius: 7, fontSize: 18, fontWeight:'300', paddingLeft: 34}} placeholder='Dây cáp usb' ></TextInput>
+        <FontAwesomeIcon style={{paddingLeft: 20, color:'white'}} size={28} icon={faCartShopping}  />
       </View>
     )
   }
@@ -44,7 +44,13 @@ export default function App() {
             },
 
             headerTintColor: "white",
-            headerRight: renderHeader,
+            headerRight: () => {
+              return (
+                <View>
+                  <FontAwesomeIcon icon={faCartShopping} size={24} style={{marginRight:'20px', color:'white'}}/>
+                </View>
+              );
+            },
             headerTitleAlign: 'center',
           }}
         />
@@ -53,8 +59,18 @@ export default function App() {
           name='screen_2' 
           component={Screen_02}
           options={{
-            title: 'hehlo',
-            headerTitle: renderHeader2,
+            title: '',
+            headerTitle: () => {
+              return(
+                <View style={{flexDirection:'row', alignItems:'center'}} >
+                  <FontAwesomeIcon style={{marginRight: -33, zIndex: 0}} size={28} icon={faMagnifyingGlass}/>
+                  <TextInput style={{backgroundColor:'white', height: '40px', width: '180px', borderRadius: 7, fontSize: 18, fontWeight:'300', paddingLeft: 34}} placeholder='Dây cáp usb' ></TextInput>
+                  <FontAwesomeIcon style={{marginLeft: 20, color:'white'}} size={28} icon={faCartShopping}  />
+                </View>
+              )
+            },
+
+            headerTintColor: 'white',
             headerTitleAlign: 'center',
             headerStyle: {
               backgroundColor: '#1BA9FF'
