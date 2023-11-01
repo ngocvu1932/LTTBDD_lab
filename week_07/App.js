@@ -5,6 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { NavigationContainer, useRoute } from '@react-navigation/native';
 import { Screen_02 } from './src/components/screen_02/Screen_02';
+import { Screen_03 } from './src/components/screen_03/Screen_03';
 
 // const Stack = createStackNavigator();
 const Stack = createNativeStackNavigator();
@@ -20,7 +21,8 @@ export default function App() {
           name='Home' 
           component={Screen_01}
           options={{
-            headerTitleAlign: 'center'
+            headerTitleAlign: 'center',
+            headerShown: false
           }}
         /> 
 
@@ -29,8 +31,20 @@ export default function App() {
           component={Screen_02}
           
           options={{
-            headerTitle: 'z'
+            headerTitle: 'z',
+            headerShown: false
 
+          }}
+        />
+
+        
+        <Stack.Screen
+          name='Screen_03'
+          component={Screen_03}
+          
+          options={{
+            headerTitle: 'hhj',
+            headerShown: false
           }}
         />
       </Stack.Navigator>
