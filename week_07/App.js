@@ -33,7 +33,6 @@ export default function App() {
           options={{
             headerTitle: 'z',
             headerShown: false
-
           }}
         />
 

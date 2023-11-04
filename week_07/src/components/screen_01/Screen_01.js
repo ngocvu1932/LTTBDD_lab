@@ -1,4 +1,4 @@
-import { Image, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { Image, Pressable, Text, TextInput, View } from 'react-native';
 import { styles } from './style';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
@@ -26,15 +26,12 @@ export const Screen_01 = () => {
             </View>
 
             <View style={{alignItems: 'center' , marginTop: 130}}>
-                <TouchableOpacity style={styles.button} onPress={() => {
-                    
-                    navigation.navigate('Screen_02', {data: test})
-                    
-
+                <Pressable style={styles.button} onPress={() => {                 
+                    navigation.navigate('Screen_02', {data: test})                  
                 }}>
                     <Text style={{color: 'white'}}>GET STARTED </Text>
                     <FontAwesomeIcon style={{color: 'white'}}  icon={faArrowRight} />
-                </TouchableOpacity>
+                </Pressable>
             </View>
         </View>
   );

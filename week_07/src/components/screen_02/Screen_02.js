@@ -1,4 +1,4 @@
-import { Image, Pressable, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { Image, Pressable, Text, TextInput, View } from 'react-native';
 import { styles } from './style';
 import { useEffect, useState } from 'react';
 import { useNavigation, useRoute } from '@react-navigation/native';
@@ -12,15 +12,25 @@ export const Screen_02 = () => {
     const navigation = useNavigation();
     const route = useRoute();
     const name =  route.params?.data;
-    // const name =  'nnv';
 
     useEffect(() => {
-        fetch('https://65409c3b45bedb25bfc22aaa.mockapi.io/week_07')
-        .then(response => response.json())
-        .then(json => {
-            setDT(json);
-        })
+        const a = () => {
+            fetch('https://65409c3b45bedb25bfc22aaa.mockapi.io/week_07')
+            .then(response => response.json())
+            .then(json => {
+                setDT(json);
+            })
+        }
+        setInterval(a, 1000);
     }, [])
+
+    // useEffect(() => {
+    //     fetch('https://65409c3b45bedb25bfc22aaa.mockapi.io/week_07')
+    //     .then(response => response.json())
+    //     .then(json => {
+    //         setDT(json);
+    //     })
+    // }, [])
 
     const [dt, setDT] = useState([]);
 
